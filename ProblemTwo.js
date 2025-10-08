@@ -4,17 +4,17 @@
 
 function findMissingElement(arr, N) {
     let n = arr.length + 1; 
-    let totalSum = n * ( n + 1) / 2;
+    let totalSum = n * ( n + 1) / 2;  
     let sum = 0 ;
     for(let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
-    return totalSum - sum;
+    return totalSum - sum; // 15 - 11 = 4 
 }
 
 let arr = [];
 let missingElement = findMissingElement(arr);
-console.log(missingElement);
+console.log(missingElement); // 4
 
 
 
